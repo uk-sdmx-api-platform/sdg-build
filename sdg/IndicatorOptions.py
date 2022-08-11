@@ -44,8 +44,8 @@ class IndicatorOptions:
     
     
     def set_reportingtype_column(self, column):
-    self.reportingtype_column = column
-    return self
+        self.reportingtype_column = column
+        return self
 
 
     def get_reportingtype_column(self):
