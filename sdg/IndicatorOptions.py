@@ -12,6 +12,7 @@ class IndicatorOptions:
         ]
         self.series_column = 'Series'
         self.unit_column = 'Units'
+        self.reportingtype_column = 'Reporting type'
 
 
     def add_non_disaggregation_columns(self, column):
@@ -40,3 +41,13 @@ class IndicatorOptions:
 
     def get_unit_column(self):
         return self.unit_column
+    
+    
+    def set_reportingtype_column(self, column):
+    self.reportingtype_column = column
+    return self
+
+
+    def get_reportingtype_column(self):
+        return self.reportingtype_column
+
