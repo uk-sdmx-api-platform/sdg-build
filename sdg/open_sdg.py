@@ -182,6 +182,7 @@ def open_sdg_indicator_options_defaults():
             'Year',
             'Units',
             'Series',
+            'Reporting type',
             'Value',
             'GeoCode',
             'Observation status',
@@ -190,11 +191,13 @@ def open_sdg_indicator_options_defaults():
              # Support common SDMX codes.
             'UNIT_MEASURE',
             'SERIES',
+            'REPORTING_TYPE'
             'COMMENT_TS',
             'DATA_LAST_UPDATE',
         ],
         'series_column': 'Series',
         'unit_column': 'Units',
+        'reportingtype_column': 'Reporting type'
     }
 
 
@@ -206,6 +209,8 @@ def open_sdg_indicator_options_from_dict(options):
         options_obj.set_series_column(options['series_column'])
     if 'unit_column' in options:
         options_obj.set_unit_column(options['unit_column'])
+    if 'reportingtype_column' in options:
+        options_obj.set_reportingtype_column(options['reportingtype_column'])
     return options_obj
 
 
