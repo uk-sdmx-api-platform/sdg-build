@@ -17,6 +17,7 @@ class DataSchemaInputIndicator(DataSchemaInputBase):
         non_disaggregation_special_columns = [
             indicator.options.get_series_column(),
             indicator.options.get_unit_column(),
+            indicator.options.get_reportingtype_column()
         ]
         for column in indicator.data.columns:
             if column in non_disaggregation_columns and column not in non_disaggregation_special_columns:
